@@ -1,0 +1,106 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":false,
+    "noHomeworld":false,
+    "rebelFleetSuffix":"Renegade",
+    
+    "marketSpawnWeight":0.9,
+
+    "startRelationships":{ 
+		"tritachyon": 0.05, 
+		"persean":0.1, 
+		"hegemony":-0.9, 
+		"pirates":-0.1, 
+		"sindrian_diktat":-0.2, },
+	"maxRelationships":{ 
+		"hegemony":-0.78, 
+		"sindrian_diktat":0.33, 
+		"remnant":-0.51,},    
+    "diplomacyPositiveChance":{ 
+        "hegemony":0.2, 
+        "persean":1.7,
+        "sindrian_diktat":1.3,},
+    "diplomacyNegativeChance":{ 
+        "hegemony":3.3,
+        "tritachyon":0.9,
+        "persean":0.7, 
+        "sindrian_diktat":1.2,
+        "luddic_path":1.8,},
+
+	"morality":"neutral",
+    "diplomacyTraits":["stalwart", "envious", "helps_allies", "irredentist" ],
+	"alignments":{
+            "hierarchial":-0.9,
+            "technocratic":0.1,
+            "militarist":0.9,
+            "diplomatic":1.0,
+            "ideological":0.3,
+    },
+	
+	"freeMarket":true,
+    
+    "vengeanceLevelNames":["Resistance", "Blockade", "Total War"],
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":0.67,	# baseline expansion behaviour
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9,
+    },
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+    #"specialForcesFlagshipVariants":{ "paragon_Elite":1, "astral_Strike":0.5 },
+    
+    "startShipsSolo":[
+      ["cerberus_Starting"],
+      ["cerberus_Shielded"],
+      ["hound_hegemony_Standard"],
+      ["hound_Standard"],
+      ["monitor_Escort"]
+    ],
+    "startShipsCombatSmall":[
+      ["mule_d_pirates_Smuggler", "cerberus_Shielded", "hound_hegemony_Standard"],
+      ["wolf_hegemony_Assault", "hound_Standard", "monitor_Escort"]
+    ],
+    "startShipsTradeSmall":[
+      ["buffalo_hegemony_Standard", "hound_hegemony_Standard", "hound_Standard"]
+    ],
+    "startShipsCombatLarge":[
+      ["dominator_AntiCV", "wolf_hegemony_Assault", "monitor_Escort"],
+      ["falcon_Attack", "mule_d_pirates_Smuggler", "cerberus_Shielded"]
+    ],
+    "startShipsTradeLarge":[
+      ["colossus_Standard", "buffalo_hegemony_Standard", "monitor_Escort"]
+    ],
+    "startShipsExplorerLarge":[
+      ["falcon_Attack", "buffalo_hegemony_Standard", "shepherd_Frontier"]
+    ],
+    "startShipsCarrierSmall":[
+      ["mora_Support", "monitor_Escort", "hound_hegemony_Standard"]
+    ],
+    "startShipsCarrierLarge":[
+      ["legion_Assault", "mora_Support", "mule_d_pirates_Smuggler"]
+    ],
+
+    
+    "startSpecialItems":[
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"militarybase", "mult":0.25},
+        {"id":"lightindustry", "mult":0.15},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":0.15},
+        {"id":"population_upsize", "count":0.05},
+        {"id":"synchrotron", "count":0.1},
+    ],
+	"tariffMult":0.4,
+}

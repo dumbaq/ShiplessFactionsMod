@@ -1,0 +1,36 @@
+{
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/vikings/portrait_vikings01.png",
+			"graphics/portraits/vikings/portrait_vikings18.png",
+            "graphics/portraits/vikings/portrait_vikings07.png",
+            "graphics/portraits/vikings/portrait_vikings08.png",
+            "graphics/portraits/vikings/portrait_vikings09.png",
+            "graphics/portraits/vikings/portrait_vikings25.png",
+            "graphics/portraits/vikings/portrait_vikings17.png",
+            "graphics/portraits/vikings/portrait_vikings40.png",
+            "graphics/portraits/vikings/portrait_vikings03.png",
+			
+			"graphics/portraits/ahegemony/portrait_ahegemony01.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony02.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony07.png",
+			"graphics/portraits/ahegemony/portrait_ahegemony09.png",
+		],
+		"standard_female":[
+			"graphics/portraits/vikings/portrait_vikings14.png",
+			"graphics/portraits/vikings/portrait_vikings28.png",
+			"graphics/portraits/vikings/portrait_vikings39.png",
+			"graphics/portraits/vikings/portrait_vikings42.png",
+            "graphics/portraits/vikings/portrait_vikings06.png",
+            "graphics/portraits/vikings/portrait_vikings02.png",
+            "graphics/portraits/vikings/portrait_vikings04.png",
+            "graphics/portraits/vikings/portrait_vikings05.png",
+            "graphics/portraits/vikings/portrait_vikings32.png",
+			
+			"graphics/portraits/ahegemony/portrait_ahegemony04.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony06.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony08.png",
+			"graphics/portraits/ahegemony/portrait_ahegemony10.png",
+		],
+	},
+},				

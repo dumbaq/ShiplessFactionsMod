@@ -1,0 +1,11 @@
+{
+	"id":"ShiplessFactions",
+	"name":"Shipless Factions",
+	"author":"dumbaq",
+	"version":"1.01",
+	"description":"Pack of (two) maybe-not-so-lore-friendly factions. No custom hulls, weapons, fighters etc. Just new powers to compete with.",
+	"gameVersion":"0.95.1a-RC6",
+	"dependencies": [
+        {"id": "nexerelin", "name": "Nexerelin"},
+    ],
+}

@@ -1,0 +1,379 @@
+{
+	id:"ahegemony",
+	"color":[203,109,81,255],
+	"displayName":"Agemony",
+	"displayNameLong":"Antigemony Guerrilla",
+	"displayNameWithArticle":"the Anti-Hegemony Guerrilla",
+	"personNamePrefixAOrAn":"an",
+    "displayNameIsOrAre":"are",
+	"logo":"graphics/factions/ahegemony.png",
+	"crest":"graphics/factions/crest_ahegemony.png",
+	#"shipNamePrefix":"ASS",
+	"shipNameSources":{
+		"BRITISH_NAVY":3,
+		"BEASTS":3,
+		"ROMAN":1,
+		"GREEK":2,
+		"REVOLUTIONARY":1,
+		"CELTIC":2,
+	},
+	"description":"The military group of deserters and renegades. There are a vast amount of former high-ranked Hegemony's military officers who are disillusioned with it's methods. United into a single faction, the rebels stole division of the Hegemony's flotilla and layed down on the distant planets of the sector. While gathering under their flag soldiers of fortune, mercenaries, they kindle the flames of revolution in the border territories of The Hegemony. Yet, while seeking for vengeance and justice they lost their own ways. As for now Antigemony Guerrilla represents totally decentralized extremist movement. They are stalwart veterans of numerous battles and value their allies above all else, but their approach becomes more and more terroristic over time.",
+	"names":{
+		"old english":1,
+		"modern":1,
+		"world":2,
+		"future":2,
+		"myth":3,
+	},
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			#"heg_aux_bp":2,
+			#"XIV_bp":0.15,
+		},
+		"hulls":{
+			"buffalo2":0, # just say no
+            "dominator_xiv":0.3,
+            "eagle_xiv":0.3,
+            "enforcer_xiv":0.2,
+            "falcon_xiv":0.15,
+            "legion_xiv":0.01,
+			"onslaught":0.1,
+            "onslaught_xiv":0.05,
+            "wolf_hegemony":0.5,
+            "cerberus":1.2,
+            "monitor":1.2,
+            "hound":1.5,
+            "mule_d_pirates":0.7,
+		},
+	},
+	
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "lowtech_bp"],
+		"hulls":[
+		],
+	},
+
+	"knownShips":{
+		#"tags":["base_bp", "heg_aux_bp", "lowtech_bp", "midline_bp", "XIV_bp"],
+		"hulls":[
+            #civil
+			"atlas",
+            "buffalo_hegemony",
+            "dram",
+            "mudskipper",
+            "nebula",
+            "ox",
+            "phaeton",
+            "prometheus",
+            #other
+            "cerberus",
+            "hound",
+			"manticore",
+            "monitor",
+            "mora",
+            "mule_d_pirates",
+            "tarsus",
+            "wayfarer",
+			#hegemony
+            "dominator_xiv",
+			"eagle",
+            "eagle_xiv",
+            "enforcer_xiv",
+            "gryphon",
+            "falcon",
+            "falcon_xiv",
+            "legion_xiv",
+			"onslaught",
+            "onslaught_xiv",
+            "wolf_hegemony",
+            #refitted
+            "atlas2",
+            "prometheus2",
+		],
+	},
+
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"condor",
+			"mora",
+			"legion_xiv",
+            "hound",
+            "falcon_xiv",
+			"onslaught",
+			"onslaught_xiv",
+		],
+	},
+	
+	"knownFighters":{
+		#"tags":["base_bp", "lowtech_bp", "midline_bp", "hegemony"],
+		"fighters":[
+			"borer_wing",
+            "talon_wing",
+            "perdition_wing",
+			"mining_drone_wing",
+		],
+	},
+
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+
+	"knownWeapons":{
+		#"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "hegemony"],
+		"weapons":[
+            #small ballistic
+             "lightag",
+             "lightdualac",
+             "lightmg",
+             "vulcan",
+             "bomb",
+             "railgun",
+             
+             #mid ballistic
+             "chaingun",
+             "flak",
+             "heavymortar",
+             "heavymg",
+             "shredder",
+             
+             #big ballistic
+             "hephag",
+             "multineedler",
+             "gauss",
+             
+             #small energy
+             "mininglaser",
+             "pdlaser",
+             "taclaser",
+             
+             #mid energy
+             "miningblaster",
+             "pulselaser",
+             
+             #big energy
+                          
+             #small missle
+             "hammer",
+             "hammer_single",
+             "heatseeker",
+             "annihilator",
+             
+             #mid missle 
+             "phasecl",
+             "typhoon",
+             "annihilatorpod",
+             
+             #big missle
+             "hammerrack",
+             "locust",
+		],
+	},
+
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[        
+		],
+	},
+
+	"knownHullMods":{
+		#"tags":["base_bp", "pirates"],
+		"hullMods":[
+			"turretgyros",
+			"armoredweapons",
+            "assault_package",
+            "blast_doors",
+            "converted_hangar",
+            "dedicated_targeting_core",
+            "eccm",
+            "ecm",
+            "escort_package",
+            "magazines",
+			"missleracks",
+            "extendedshieldemitter",
+            "frontemitter",
+            "frontshield",
+            "hardenedshieldemitter",
+            "hardened_subsystems",
+			"heavyarmor",
+            "militarized_subsystems",
+			"autorepair",
+			"efficiency_overhaul",
+            "operations_center"
+		],
+	},
+
+	"factionDoctrine":{
+		"warships":4,
+		"carriers":2,
+		"phaseShips":0,
+		
+		"officerQuality":4,
+		"shipQuality":1,
+		"numShips":2,
+		
+		"shipSize":4,
+		"aggression":3,
+		
+		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.05,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.3,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0.3,
+
+		"commanderSkills":[
+			"crew_training",
+			"officer_training",
+			#"coordinated_maneuvers",
+            "helmsmanship",
+            "target_analysis",
+            "ranged_specialization",
+            "impact_mitigation",
+            "electronic_warfare",
+            "damage_control",
+		],
+	},
+
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"ai_cores",	
+	],
+
+	"music":{
+		"theme":"music_hegemony_market_neutral",
+		"market_neutral":"music_hegemony_market_neutral",
+		"market_hostile":"music_hegemony_market_hostile",
+		"market_friendly":"music_hegemony_market_friendly",
+		"encounter_neutral":"music_hegemony_encounter_neutral",
+		"encounter_hostile":"music_hegemony_encounter_hostile",
+		"encounter_friendly":"music_hegemony_encounter_friendly",
+	},	
+
+	"internalComms":"hegemony_internal",
+	#"tariffFraction":0.4,
+	#"tollFraction":0.1,
+	#"fineFraction":0.25,
+
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_hegemony05.png",
+			"graphics/portraits/portrait_hegemony12.png",
+			"graphics/portraits/portrait_hegemony15.png",
+            
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait_mercenary06.png",
+            
+			"graphics/portraits/portrait23.png",
+            
+            "graphics/portraits/ahegemony/portrait_ahegemony01.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony02.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony07.png",
+			"graphics/portraits/ahegemony/portrait_ahegemony09.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_hegemony04.png",
+			"graphics/portraits/portrait_hegemony11.png",
+			"graphics/portraits/portrait_hegemony14.png",
+			"graphics/portraits/portrait_hegemony16.png",
+            
+            "graphics/portraits/portrait_mercenary05.png",
+                        
+			"graphics/portraits/portrait37.png",
+            
+            "graphics/portraits/ahegemony/portrait_ahegemony04.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony06.png",
+            "graphics/portraits/ahegemony/portrait_ahegemony08.png",
+			"graphics/portraits/ahegemony/portrait_ahegemony10.png",
+		],
+	},
+
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"Rebelion Leader"},
+            "spaceAdmiral":{"name":"Freedom Fighter"},
+			"spaceCommander":{"name":"Freedom Captain"},
+		},
+		"posts":{
+			"factionLeader":{"name":"Rebelion Leader"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Governor"},
+            "stationCommander":{"name":"Supervisor"},
+            "administrator":{"name":"Executive"},
+            "quartermaster":{"name":"Commissary"},
+            "genericMilitary":{"name":"Lieutenant"},
+		},
+	},
+
+	"voices":{
+		"LOW":{
+			"soldier":8,
+			"faithful":1,		
+			"spacer":7,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":3,
+			"spacer":2,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":6,
+			"aristo":1,
+		},
+	},
+
+	"custom":{
+		"decentralized":true,
+		"offersCommissions":true,
+		"makesPirateBases":true,
+		"engagesInHostilities":true,
+		"offerMissionsWhenHostile":true,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"allowsTransponderOffTrade":true,
+		"caresAboutAtrocities":true,
+		"pirateBaseStationTypes":{
+			"orbitalstation":1,
+			"orbitalstation_mid":6,
+			"orbitalstation_high":0,
+		},
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},	
+
+	"fleetTypeNames":{
+		"smallTrader":"Traders Group",
+		"trade":"Trade Convoy",
+		"tradeLiner":"Refugees",
+        
+		"patrolSmall":"Rebels",
+		"patrolMedium":"Squad",
+		"patrolLarge":"Brigade",
+        
+		"mercScout":"Recon",
+		"mercBountyHunter":"Hunters",
+		"mercPrivateer":"Privateer",
+		"mercPatrol":"Sentry",
+		"mercArmada":"Brigade",
+        
+		"taskForce":"Task Force",
+	},
+	
+},

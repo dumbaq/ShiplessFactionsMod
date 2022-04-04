@@ -1,0 +1,390 @@
+{
+	id:"vikings",
+	"color":[109,155,195,255],
+	"displayName":"Valhalla Wolves",
+	"displayNameLong":"Valhalla Wolves",
+	"displayNameWithArticle":"the Valhalla Wolves",
+	"personNamePrefixAOrAn":"a",
+    "displayNameIsOrAre":"are",
+	"logo":"graphics/factions/vikings.png",
+	"crest":"graphics/factions/crest_vikings.png",
+	#"shipNamePrefix":"VSS",
+	"shipNameSources":{
+		"NORSE":1,
+		"BEASTS":1,
+		"PIRATES":3,
+		"CELTIC":2,
+	},
+	"description":"Predatory faction that splintered from main military forces of Tri-Tachyon megacorporation. Their captains call themselves the noble ancestors of long forgotten civilization of maritime plunderers and marauders. Their hierarchy grows as more and more dismissed Tri-Tachyon's clerks and fugitive corporats seek shelter, because retire from Tri-Tachyon is tantamount to death. The traditions of the Valhalla Wolves scorn any peaceful solutions and are driven by an insatiable thirst for freedom and battle. However, they can't be treated as flimsy pirates, as they are much more powerful and organised. Equipped with advanced Tri-Tachyon devices, their fleets strike with thousands of fighter wings piloted by their ferocious warriors slaughtering any weak in their path.",
+	"names":{
+		"myth":1,
+		"modern":2,
+		"ai":2,
+		"future":3,
+	},
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			#"heg_aux_bp":2,
+			#"XIV_bp":0.15,
+		},
+		"hulls":{
+            "brawler_tritachyon":2.0,
+            "hound_hegemony":1.2,
+            "omen":1.1,
+            "vigilance":1.3,
+            "wolf":1.5,
+            "gemini":0.6,
+            "sunder":1.5,
+            "champion":1.3,
+            "astral":0.5,
+            "conquest":0.2,
+            "atlas2":0.05,
+            "prometheus2":0.3,
+		},
+	},
+	
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "hightech_bp"],
+		"hulls":[
+		],
+	},
+
+	"knownShips":{
+		#"tags":["base_bp", "heg_aux_bp", "lowtech_bp", "midline_bp", "XIV_bp"],
+		"hulls":[
+            #civil
+            "buffalo",
+            "dram",
+            "mudskipper",
+            "ox",
+            "phaeton",
+            "prometheus",
+            "valkyrie",
+
+			#hi-tech
+            "brawler_tritachyon",
+            "omen",
+            "tempest",
+            "vigilance",
+            "wolf",
+            "shrike",
+            "sunder",
+            "champion",
+            "heron",
+            "astral",
+            "conquest",
+             
+            #other
+            "atlas2",
+            "prometheus2",
+            "hound_hegemony",
+            "gemini",
+
+		],
+	},
+
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"wolf",
+            "vigilance",
+            "brawer_tritachyon",
+            "sunder",
+            "hound_hegemony",
+		],
+	},
+	
+	"knownFighters":{
+		#"tags":["base_bp", "lowtech_bp", "midline_bp", "hegemony"],
+		"fighters":[
+			"claw_wing",
+            "dagger_wing",
+            "longbow_wing",
+            "lux_wing",
+            "wasp_wing",
+            "xyphos_wing",
+		],
+	},
+
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+
+	"knownWeapons":{
+		#"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "hegemony"],
+		"weapons":[
+            #small ballistic
+             "vulcan",
+             "railgun",
+             
+             #mid ballistic
+             "heavymg",
+             "hveldriver",
+             
+             #big ballistic
+             "mjolnir",
+             
+             #small energy
+             "lrpdlaser",
+             "pdburst",
+             "ioncannon",
+             "amblaster",
+             
+             #mid energy
+             "miningblaster",
+             "pulselaser",
+             "ionpulser",
+             "heavyblaster",
+             "heavyburst",
+             
+             #big energy
+             "autopulse",
+             "plasma",
+                          
+             #small missle
+             "breach",
+             "harpoon",
+             "heatseeker",
+             "sabot",
+             
+             #mid missle 
+             "salamanderpod",
+             "sabotpod",
+             "harpoonpod",
+             "breachpod",
+             
+             #big missle
+             "squall",
+             "hurricane",
+		],
+	},
+
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[        
+		],
+	},
+
+	"knownHullMods":{
+		#"tags":["base_bp", "pirates"],
+		"hullMods":[
+			"converted_hangar",
+			"turretgyros",
+            "auxiliarythrusters",
+			"augmentedengines",
+
+			"expanded_deck_crew",
+            
+			"magazines",
+			"missleracks",
+            "high_scatter_amp",
+            
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",
+            
+			"heavyarmor",
+			"insulatedengine",
+            "blast_doors",
+            "hardened_subsystems",
+            "reinforcedhull",
+
+            "fluxcoil",
+            "fluxdistributor",
+			"fluxbreakers",
+			"escort_package",
+			"assault_package",
+            "safetyoverrides",
+            "militarized_subsystems",
+            "expanded_cargo_holds"
+		],
+	},
+
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":3,
+		"phaseShips":0,
+		
+		"officerQuality":1,
+		"shipQuality":4,
+		"numShips":4,
+		
+		"shipSize":2,
+		"aggression":4,
+		
+		"combatFreighterProbability":0.05,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.15,  				# as part of the normal combat lineup
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0.3,
+
+		"commanderSkills":[
+			#"crew_training",
+            #"helmsmanship",
+            #"strike_commander",
+            #"target_analysis",
+            #"impact_mitigation",
+            #"shield_modulation",
+            #"energy_weapon_mastery",
+            #"fighter_uplink",
+			#"officer_training",
+			#"wolfpack_tactics",
+		],
+	},
+
+	"illegalCommodities":[
+		"ai_cores",	
+        "organs",
+	],
+
+	"music":{
+		"theme":"music_hegemony_market_neutral",
+		"market_neutral":"music_hegemony_market_neutral",
+		"market_hostile":"music_hegemony_market_hostile",
+		"market_friendly":"music_hegemony_market_friendly",
+		"encounter_neutral":"music_hegemony_encounter_neutral",
+		"encounter_hostile":"music_hegemony_encounter_hostile",
+		"encounter_friendly":"music_hegemony_encounter_friendly",
+	},	
+
+	"portraits":{
+		"standard_male":[            
+			"graphics/portraits/vikings/portrait_vikings01.png",
+			"graphics/portraits/vikings/portrait_vikings18.png",
+			"graphics/portraits/vikings/portrait_vikings42.png",
+            "graphics/portraits/vikings/portrait_vikings06.png",
+            "graphics/portraits/vikings/portrait_vikings07.png",
+            "graphics/portraits/vikings/portrait_vikings08.png",
+            "graphics/portraits/vikings/portrait_vikings09.png",
+            "graphics/portraits/vikings/portrait_vikings25.png",
+            "graphics/portraits/vikings/portrait_vikings17.png",
+            "graphics/portraits/vikings/portrait_vikings40.png",
+            "graphics/portraits/vikings/portrait_vikings03.png",
+		],
+		"standard_female":[
+            
+			"graphics/portraits/vikings/portrait_vikings14.png",
+			"graphics/portraits/vikings/portrait_vikings28.png",
+			"graphics/portraits/vikings/portrait_vikings39.png",
+			"graphics/portraits/vikings/portrait_vikings42.png",
+            "graphics/portraits/vikings/portrait_vikings06.png",
+            "graphics/portraits/vikings/portrait_vikings02.png",
+            "graphics/portraits/vikings/portrait_vikings04.png",
+            "graphics/portraits/vikings/portrait_vikings05.png",
+            "graphics/portraits/vikings/portrait_vikings32.png",
+            "graphics/portraits/vikings/portrait_vikings03.png",
+		],
+	},
+
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"Chieftain Overlord"},     
+            #dude i am russian, hell i know about real space-viking' ranks...
+            "spaceSailor":{"name":"Shkyprain"},
+            "spaceChief":{"name":"Styrimann"},
+            "spaceEnsign":{"name":"Odalsbondi"},
+            "spaceLieutenant":{"name":"Hauldr"},
+            "spaceCommander":{"name":"Huskarl"},
+            "spaceCaptain":{"name":"Thegn"},
+            "spaceAdmiral":{"name":"Se-Jarl"},
+            "spaceMarshal":{"name":"Se-Konung"},
+            
+            "groundPrivate":{"name":"Fyrdmann"},
+            "groundSergeant":{"name":"Verdung"},
+            "groundLieutenant":{"name":"Hersier"},
+            "groundCaptain":{"name":"Jarl"},
+            "groundMajor":{"name":"Riks-jarl"},
+            "groundColonel":{"name":"Konung"},
+            "groundGeneral":{"name":"Dryhten"},
+            
+            "citizen":{"name":"Bonde"},
+            "agent":{"name":"Inndrott"},
+            "specialAgent":{"name":"Heidmenn"},
+            "pilot":{"name":"Styrimann"},
+            
+		},
+		"posts":{
+			"factionLeader":{"name":"Chieftain Overlord"},
+			"patrolCommander":{"name":"Chief"},
+			"fleetCommander":{"name":"Warlord"},
+			"baseCommander":{"name":"Lendrmann"},
+            "stationCommander":{"name":"Sýslumann"},
+            "portmaster":{"name":"Harbor Master"},
+            "administrator":{"name":"Hyovjing"},
+            "quartermaster":{"name":"Steward"},
+            
+            "genericMilitary":{"name":"Huskarl"},
+            "citizen":{"name":"Bonde"},
+            
+            "mercenary":{"name":"Huskarl"},
+            "officer":{"name":"Thegn"},
+            "officer_for_hire":{"name":"Thegn (available for hire)"}, 
+		},
+	},
+
+	"voices":{
+		"LOW":{
+			"soldier":8,
+			"faithful":2,		
+			"spacer":1,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":1,
+			"spacer":1,
+		},
+		"HIGH":{
+			"soldier":9,
+			"official":1,
+			"aristo":1,
+		},
+	},
+
+	"custom":{
+		"decentralized":false,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"offerMissionsWhenHostile":true,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"caresAboutAtrocities":true,
+        "fightToTheLast":true,
+		
+        "punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":true,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},	
+
+	"fleetTypeNames":{
+		"smallTrader":"Bargainer",
+		"trade":"Caravan",
+		"tradeLiner":"Peasants",
+        "tradeSmuggler":"Shady Bootlegger",
+        
+		"patrolSmall":"Shield",
+		"patrolMedium":"Bulwark",
+		"patrolLarge":"Bastion",
+        
+		"mercScout":"Scour",
+		"mercBountyHunter":"Harrier",
+		"mercPatrol":"Wardens",
+		"mercArmada":"Warband",
+        
+        "taskForce":"Freebooters Party",
+        "foodReliefFleet":"Esquire Escort",
+        "inspectionFleet":"Vanguard",
+	},
+},

@@ -1,0 +1,108 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":false,
+    "noHomeworld":false,
+    "rebelFleetSuffix":"Slacker",
+    
+    "marketSpawnWeight":0.75,
+
+    "startRelationships":{ 
+		"persean":-0.7, 
+		"hegemony":-0.8, 
+		"pirates":-0.2, 
+		"luddic_church":-0.5, 
+		"sindrian_diktat":-0.2, },
+	"maxRelationships":{ 
+		"persean":-0.66, 
+		"luddic_church":-0.2, 
+		"pirates":0.22, 
+		"remnant":-0.51,},    
+    "diplomacyPositiveChance":{ 
+        "hegemony":0.7, 
+        "tritachyon":0.3, 
+        "pirates":1.1,},
+    "diplomacyNegativeChance":{ 
+        "tritachyon":1.3,
+        "persean":1.1, 
+        "sindrian_diktat":0.8,
+        "luddic_church":1.2,
+        "luddic_path":1.5,},
+
+	"morality":"amoral",
+    "diplomacyTraits":["temperamental", "hates_ai", "predatory", "irredentist" ],
+	"alignments":{
+            "hierarchial":0.4,
+            "technocratic":0.3,
+            "militarist":1.0,
+            "diplomatic":-0.9,
+            "corporate":-0.6,
+    },
+	
+    "vengeanceLevelNames":["Tracking", "Chasing", "Hunting Down"],
+    "vengeanceFleetNames":["Hounds", "Pack", "Chasers"],
+    "vengeanceFleetNamesSingle":["a Trackers Party", "a Scourers Group", "a Harriers Pack"],
+	"freeMarket":true,
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":2.7,	# baseline expansion behaviour
+    "colonyTargetValuator":"exerelin.campaign.colony.ColonyTargetValuator",
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.6,
+    },
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+     "startShipsSolo":[
+      ["brawler_tritachyon_Standard"],
+      ["omen_PD"],
+      ["tempest_Starting"],
+      ["vigilance_FS"],
+      ["wolf_Overdriven"]
+    ],
+    "startShipsCombatSmall":[
+      ["wolf_Overdriven", "brawler_tritachyon_Standard", "brawler_tritachyon_Standard"],
+      ["vigilance_FS", "omen_PD", "tempest_Starting"]
+    ],
+    "startShipsTradeSmall":[
+      ["buffalo_Standard", "vigilance_FS", "brawler_tritachyon_Standard"]
+    ],
+    "startShipsCombatLarge":[
+      ["champion_Escort", "sunder_Overdriven", "brawler_tritachyon_Standard"],
+      ["sunder_Overdriven", "shrike_Attack", "vigilance_FS"]
+    ],
+    "startShipsTradeLarge":[
+      ["buffalo_Standard", "buffalo_Standard", "sunder_Overdriven"]
+    ],
+    "startShipsExplorerLarge":[
+      ["champion_Escort", "tempest_Starting", "omen_PD"]
+    ],
+    "startShipsCarrierSmall":[
+      ["gemini_Standard", "vigilance_FS", "wolf_Overdriven"]
+    ],
+    "startShipsCarrierLarge":[
+      ["heron_Attack", "champion_Escort", "shrike_Attack"]
+    ],
+    
+    "startSpecialItems":[
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.2},
+    ],
+    
+    "industrySeeds":[
+         {"id":"heavyindustry", "mult":0.05},
+        {"id":"orbitalworks", "mult":0.2},
+        {"id":"militarybase", "mult":0.33},
+        {"id":"fuelprod", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":0.02},
+        {"id":"nanoforge_corrupted", "count":0.25},
+        {"id":"population_upsize", "count":0.15},
+        {"id":"synchrotron", "count":0.1},
+    ],
+	"tariffMult":0.8,
+}
